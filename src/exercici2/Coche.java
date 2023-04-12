@@ -2,16 +2,16 @@ package exercici2;
 
 public class Coche {
 	
-	private static final String marca = "Seat";
+	private static final String marca = "Seat"; //damos valor final al atributo
 	private static String modelo;
 	private final int potencia;
 	
 	
-	public Coche(int potencia) {
+	public Coche(String marca, String modelo, int potencia) {
 		this.potencia = potencia;
 	}
 	
-	static void frenar(){
+	public static void frenar(){
 		System.out.println("El vehículo está frenando");
 	}
 	
@@ -42,7 +42,7 @@ public class Coche {
 
 	@Override
 	public String toString() {
-		return "Coche:"+marca+": "+modelo+". Tiene una potencia de: " + potencia + "CV";
+		return "El coche:"+marca+" "+modelo+". Tiene una potencia de: " + potencia + "CV";
 	}
 	
 	

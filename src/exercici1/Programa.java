@@ -3,7 +3,14 @@ package exercici1;
 public class Programa {
 
 	public static void main(String[] args) {
-		System.out.println("Empezamos proyecto");
+		
+		new Cuerda("guitarra", 500);
+		new Percusion("bateria", 1500);
+		new Viento("flauta",800);
+		
+		
+		
+		
 
 	}
 
